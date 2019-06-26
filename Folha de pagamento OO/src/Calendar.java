@@ -56,19 +56,6 @@ public class Calendar {
         System.out.println();
     }
 
-    /*Verificar dias uteis*/
-    public boolean checkBusinessDay () {
-        System.out.println("Informe o dia para verificar se é um dia útil: ");
-        int day = input.nextInt();
-        String dayWeek = this.weeksName[(day-1)%7];
-        if (dayWeek.equals("Domingo") || dayWeek.equals("Sábado")) {
-            System.out.println("Dia " + day + " não é um dia útil: " + dayWeek);
-            return false;
-        }
-        System.out.println("Dia " + day + " é um dia útil: " + dayWeek);
-        return true;
-    }
-
     public void listPaymentSchedule () {
 
         System.out.println("######### Formas de pagamento #########");
