@@ -1,5 +1,6 @@
 package Employee1;
 
+import Exceptions1.Exceptions;
 import Syndicate1.Syndicate;
 
 import java.util.ArrayList;
@@ -17,14 +18,14 @@ public class Commissioned extends Employee {
         System.out.println();
         new EmployeeDatas().basicDatas(employee,allEmployees);
         System.out.println("Salário mensal:");
-        employee.setSalary(exceptions.doubleNumber());
+        employee.setSalary(new Exceptions().doubleNumber());
         System.out.println("Porcentagem da comissão: [%]");
-        double amountCommission = exceptions.doubleNumber();
+        double amountCommission = new Exceptions().doubleNumber();
 
         while (amountCommission > 100) {
 
             System.out.println("Valor invalido, informe novamente.");
-            amountCommission = exceptions.doubleNumber();
+            amountCommission = new Exceptions().doubleNumber();
         }
         amountCommission /= 100;
         ((Commissioned)employee).setAmountCommission(amountCommission);

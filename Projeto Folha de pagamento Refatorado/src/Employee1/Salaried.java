@@ -1,6 +1,6 @@
 package Employee1;
 
-
+import Exceptions1.Exceptions;
 import Syndicate1.Syndicate;
 
 import java.util.ArrayList;
@@ -15,7 +15,7 @@ public class Salaried extends Employee {
         System.out.println();
         new EmployeeDatas().basicDatas(employee,allEmployees);
         System.out.println("Salário mensal:");
-        employee.setSalary(exceptions.doubleNumber());
+        employee.setSalary(new Exceptions().doubleNumber());
         employee.setPayDay(31);
         employee.setPaySchedule("Mensal");
         allEmployees.add(employee);

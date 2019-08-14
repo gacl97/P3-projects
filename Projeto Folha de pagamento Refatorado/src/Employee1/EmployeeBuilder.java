@@ -2,7 +2,6 @@ package Employee1;
 import Exceptions1.*;
 
 public interface EmployeeBuilder {
-    Exceptions exceptions = new Exceptions();
 
     EmployeeBuilder name(String name);
     EmployeeBuilder id(int id);

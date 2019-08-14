@@ -5,7 +5,7 @@ import Syndicate1.*;
 import java.util.ArrayList;
 
 public interface Person {
-    Exceptions exceptions = new Exceptions();
+
     void setName(String name);
     void setId(int id);
     void setAddress(String address);
@@ -23,9 +23,6 @@ public interface Person {
     int getId();
     int getPayDay();
     double getSalary ();
-
-    //void listEmployees (ArrayList<Person> employees);
-
     void setSyndicate(boolean syndicate);
     void setSyndicate (int syndicateId, double monthlyFee, double serviceCharges);
     Syndicate getSyndicate ();

@@ -1,5 +1,6 @@
 package Employee1;
 
+import Exceptions1.Exceptions;
 import Syndicate1.Syndicate;
 import Employee1.EmployeeDatas;
 
@@ -18,7 +19,7 @@ public class Hourly extends Employee {
         System.out.println();
         new EmployeeDatas().basicDatas(employee,allEmployees);
         System.out.println("Salário por hora:");
-        employee.setSalary(exceptions.doubleNumber());
+        employee.setSalary(new Exceptions().doubleNumber());
         employee.setPayWeek("Sexta-feira");
         employee.setPaySchedule("Semanal");
         allEmployees.add(employee);

@@ -2,6 +2,7 @@ package Employee1;
 
 import java.util.Scanner;
 import Syndicate1.*;
+import Exceptions1.*;
 
 public abstract class Employee implements Person{
 
